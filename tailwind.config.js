@@ -6,7 +6,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'Nunito':['Nunito'],
+        Nunito:['Nunito'],
+      },
+      colors:{
+        cielo:'#b5d6ff',
+      },
+      fontSize:{
+        resumen:"17px",
       }
     },
   },

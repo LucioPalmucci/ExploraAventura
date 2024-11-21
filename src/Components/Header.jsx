@@ -1,6 +1,6 @@
 function Header(){
     return(
-        <div id="Encabezado" className="w-full flex items-center justify-center space-x-72 m-5 ml-1 font-Nunito">
+        <div id="Encabezado" className="w-full flex items-center justify-center space-x-72 p-5 font-Nunito font-semibold bg-cielo">
             <img id="Logo" width="294" height={23} src="https://exploraventura.com.ar/wp-content/uploads/2024/05/cropped-EXPLORAVENTURA.png" className=""/>
             <div className="flex space-x-10 ">
                 <h5>Home</h5>
