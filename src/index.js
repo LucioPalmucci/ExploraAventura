@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Celular from './Components/Celular';
+import Comentarios from './Components/Comentarios';
+import Descripcion from './Components/Descripción';
 import Header from './Components/Header';
 import Introduction from './Components/Introduction';
 import './index.css';
@@ -10,6 +13,9 @@ root.render(
   <React.StrictMode>
     <Header/>
     <Introduction/>
+    <Descripcion/>
+    <Celular/>
+    <Comentarios/>
   </React.StrictMode>
 );
 
