@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ExploraAventura/static/css/main.d3bba7af.css",
+    "main.js": "/ExploraAventura/static/js/main.17403b3e.js",
+    "static/js/453.0a36081d.chunk.js": "/ExploraAventura/static/js/453.0a36081d.chunk.js",
+    "index.html": "/ExploraAventura/index.html",
+    "main.d3bba7af.css.map": "/ExploraAventura/static/css/main.d3bba7af.css.map",
+    "main.17403b3e.js.map": "/ExploraAventura/static/js/main.17403b3e.js.map",
+    "453.0a36081d.chunk.js.map": "/ExploraAventura/static/js/453.0a36081d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3bba7af.css",
+    "static/js/main.17403b3e.js"
+  ]
+}
