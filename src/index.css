@@ -1,6 +1,16 @@
 body{
     background-color: rgb(237, 237, 237);
 }
+.slick-slide > div {
+    margin: 0 25px;
+}
+.slick-dots li.slick-active i {
+    color: #b5d6ff;
+}
+.slick-dots li{
+    width: 10px;
+    height: 10px;
+}
 
 @tailwind base;
 @tailwind components;
