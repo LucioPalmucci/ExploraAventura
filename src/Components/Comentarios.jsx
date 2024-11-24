@@ -22,7 +22,7 @@ const Comentarios = () => {
     }
 
     return (
-        <div className="flex flex-col items-center font-Nunito w-full bg-red-500">
+        <div className="flex flex-col items-center font-Nunito w-full bg-red-500 p-2">
             <div className="text-center w-full p-8">
                 <h3 className="text-white text-4xl font-bold">Testimonios</h3>
             </div>

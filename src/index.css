@@ -11,6 +11,15 @@ body{
     width: 10px;
     height: 10px;
 }
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out  ;
+}
+
+.answer.visible {
+    max-height: 500px;
+}
 
 @tailwind base;
 @tailwind components;
