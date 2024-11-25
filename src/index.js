@@ -4,6 +4,7 @@ import App from './Components/App';
 import Celular from './Components/Celular';
 import Comentarios from './Components/Comentarios';
 import Descripcion from './Components/Descripción';
+import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Introduction from './Components/Introduction';
 import Preguntas from './Components/Preguntas';
@@ -20,6 +21,7 @@ root.render(
     <Comentarios/>
     <App/>
     <Preguntas/>
+    <Footer/>
   </React.StrictMode>
 );
 

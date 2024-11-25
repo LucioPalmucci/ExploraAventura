@@ -1,6 +1,26 @@
+import React, { useEffect, useState } from 'react';
 import JuegaAhora from "./JuegaAhora";
 
 function Descripcion(){
+    const [showButton, setShowButton] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+        if (window.scrollY > 300) {
+            setShowButton(true);
+        } else {
+            setShowButton(false);
+        }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+        window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return(
         <div className="font-Nunito flex justify-center align-center mt-40 ml-32 mr-32 rounded-3xl bg-white p-10 pl-16 pr-16">
             <div id="texto" className="w-4/5 pl-16 pr-16">
@@ -30,6 +50,14 @@ function Descripcion(){
                     <h4 className="text-xl">Registrar las sensaciones físicas y reconocer las necesidades del cuerpo ayuda a cuidarlo y respetarlo</h4>
                 </div>
             </div>
+            {showButton && (
+            <button
+              onClick={scrollToTop}
+              className="fixed bottom-6 right-10 bg-white p-2 rounded-full pl-4 pr-4 border border-black hover:bg-gray-950 hover:text-white transition duration-300 animate-bounce"
+            >
+              ↑
+            </button>
+            )}
         </div>
     )
 }
