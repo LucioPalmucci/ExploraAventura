@@ -2,11 +2,11 @@ import JuegaAhora from "./JuegaAhora";
 
 function Celular(){
     return(
-        <div className="font-Nunito flex justify-center align-center mt-4 ml-32 mr-32 pl-16 pr-16">
+        <div className="font-Nunito xl:flex justify-center align-center mt-4 xl:ml-32 xl:mr-32 sm:m-10 pl-16 pr-16">
             <div id="Img" className="mt-0">
                 <img src="https://exploraventura.com.ar/wp-content/uploads/2024/05/08-01-1024x1024.png" alt="" height={600} width={730} />
             </div>
-            <div id="texto" className="w-3/5 pr-48">
+            <div id="texto" className="2xl:w-3/5 md:pr-48">
                 <div className="animate-slideRT">
                     <h4 className="text-xl p-1 text-red-400 font-semibold">Juega y conecta como nunca antes...</h4><br/>
                     <h2 className="text-5xl font-bold p-1 text-sky-700">Mindfulness como un medio de conexión</h2><br/>
@@ -20,7 +20,7 @@ function Celular(){
                     Con Exploraventura podrás entrenar esta capacidad y lograr una mayor conexión con vos mismo y con los demás.
                     </p><br/><br/>
                 </div>
-                <div className="justify-center align-center flex mr-6 animate-slideLT">
+                <div className="justify-center align-center flex mr-6 animate-slideLT sm:mb-1">
                     <JuegaAhora/>
                 </div>
             </div>
