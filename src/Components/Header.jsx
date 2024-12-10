@@ -10,6 +10,7 @@ function Header() {
       const encabezado = document.getElementById('Encabezado');
       const bars = document.getElementById('bars');
       const Paginas = document.getElementById('Paginas');
+      const logo = document.getElementById('Logo');
 
       if (encabezado) {
         if (window.innerWidth < 1427) {
@@ -30,8 +31,18 @@ function Header() {
           Paginas.classList.remove('hidden');
         }
       }
+      if(logo){
+        if(window.innerWidth < 390){
+          logo.width = 130;
+        }
+        else if(window.innerWidth < 534){
+          logo.width = 180;
+        }
+        else{
+          logo.width = 294;
+        }
+      };
     };
-
     window.addEventListener('resize', handleResize);
     handleResize();
 
@@ -51,17 +62,17 @@ function Header() {
         <h5>Mindfulness</h5>
         <h5>Aprender</h5>
       </div>
-      <button className="text-lg p-2 pl-5 pr-5 rounded-3xl bg-red-500 text-white">¡Juega Ahora!</button>
+      <button className="sm:text-lg max-sm:text-xs p-2 pl-5 pr-5 rounded-3xl bg-red-500 text-white">¡Juega Ahora!</button>
       <div className="hidden" id='bars'>
         <FontAwesomeIcon icon={faBars} size="2x" onClick={toggleMenu} color='black' />
       </div>
       {isMenuOpen && (
-        <div className="absolute top-16 right-0 bg-white shadow-lg rounded-lg  z-50">
-          <ul className="space-y-2">
-            <li className='hover:bg-gray-200 p-4 rounded-lg'>Home</li>
-            <li className='hover:bg-gray-200 p-4 rounded-lg'>Regulación Emocional</li>
-            <li className='hover:bg-gray-200 p-4 rounded-lg'>Mindfulness</li>
-            <li className='hover:bg-gray-200 p-4 rounded-lg'>Aprender</li>
+        <div className="absolute top-16 right-0 bg-white shadow-lg rounded-lg z-50">
+          <ul className="space-y-2 sm:text-xs">
+            <li className='hover:bg-gray-200 p-2 rounded-lg'>Home</li>
+            <li className='hover:bg-gray-200 p-2 rounded-lg'>Regulación Emocional</li>
+            <li className='hover:bg-gray-200 p-2 rounded-lg'>Mindfulness</li>
+            <li className='hover:bg-gray-200 p-2 rounded-lg'>Aprender</li>
           </ul>
         </div>
       )}

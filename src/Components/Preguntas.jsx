@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../index.css';
 
 function Preguntas() {
@@ -23,8 +23,26 @@ function Preguntas() {
     }
   ]
 
+  useEffect(() => {
+    const handleResize = () => {
+      const contenedor = document.getElementById('conetenedor');
+      if(window.innerWidth < 663){
+        contenedor.classList.remove('p-36');
+        contenedor.classList.add('p-14');
+      }
+      else{
+        contenedor.classList.remove('p-14');
+        contenedor.classList.add('p-36');
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div className="font-Nunito justify-center p-36 pt-20 text-center">
+    <div className="font-Nunito justify-center p-36 pt-20 text-center" id="conetenedor">
       <div>
         <h1 className="text-4xl font-bold p-1 text-red-500">Preguntas Frecuentes</h1>
       </div>

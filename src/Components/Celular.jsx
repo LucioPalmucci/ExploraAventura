@@ -20,7 +20,7 @@ function Celular(){
                     Con Exploraventura podrás entrenar esta capacidad y lograr una mayor conexión con vos mismo y con los demás.
                     </p><br/><br/>
                 </div>
-                <div className="justify-center align-center flex mr-6 animate-slideLT sm:mb-1">
+                <div className="justify-center sm:align-center flex mr-6 animate-slideLT mb-1 max-sm:mb-8">
                     <JuegaAhora/>
                 </div>
             </div>

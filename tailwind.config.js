@@ -45,7 +45,7 @@ module.exports = {
         slideLT: {
           '0%': { transform: 'translateX(-10%) translateY(-15%)', opacity: '0' },
           '100%': { transform: 'translateX(0) translateY(0)', opacity: '1' },
-        }
+        },
       },
       animation: {
         slideInLeft: 'slideInLeft 2.5s ease-out',

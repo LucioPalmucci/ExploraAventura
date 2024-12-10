@@ -1,10 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 const Comentarios = () => {
 
-    const Settings = {
+    const [settings, setSettings] = useState({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        dotsClass: "slick-dots custom-dots bg-red-500",
+        customPaging: function (i) {
+          return (
+            <div>
+              <i className="fas fa-circle text-dots text-fondo"></i>
+            </div>
+          );
+        }
+      });
+    
+      useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth < 520) {
+            setSettings((prevSettings) => ({
+              ...prevSettings,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }));
+          } else {
+            setSettings((prevSettings) => ({
+              ...prevSettings,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }));
+          }
+        };
+    
+        window.addEventListener('resize', handleResize);
+        handleResize();
+    
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+
+    /*let Settings = {
         dots: true,
         infinite: true,
         speed: 500,
@@ -19,7 +59,7 @@ const Comentarios = () => {
                 </div>
             );
         }
-    }
+    }*/
 
     return (
         <div className="flex flex-col items-center font-Nunito w-full bg-red-500 p-2">
@@ -27,7 +67,7 @@ const Comentarios = () => {
                 <h3 className="text-white text-4xl font-bold">Testimonios</h3>
             </div>
             <div className="w-5/6">
-                <Slider {...Settings} className='flex justify-center items-center'>
+                <Slider {...settings} className='flex justify-center items-center'>
                     <div className="comentario bg-white p-5 m-5 rounded-3xl border-l-8 border-sky-200 mx-4">
                         <i className="fas fa-quote-right text-gray-300 text-4xl"></i>
                         <h4 className="text-2xl mt-2">La recomiendo!</h4>
