@@ -1,7 +1,7 @@
 
 function App() {
   return (
-    <div className="flex justify-center bg-white w-full lg:p-16">
+    <div id="app" className="flex justify-center bg-white w-full lg:p-16">
         <div id="texto" className="font-Nunito lg:w-1/2 2xl:p-20 2xl:pr-72 max-lg:p-14 animate-slideRT">
             <h2 className="text-5xl font-bold p-1 text-red-500">El mejor juego en app para conectar y aprender</h2><br/>
             <p className="font-semibold text-resumen p-1">En todos los casilleros del juego van a encontrar propuestas para:<br/>

@@ -57,10 +57,10 @@ function Header() {
     <div id="Encabezado" className="w-full flex items-center justify-between space-x-72 p-5 font-Nunito font-semibold bg-cielo fixed">
       <img id="Logo" width="294" height={23} src="https://exploraventura.com.ar/wp-content/uploads/2024/05/cropped-EXPLORAVENTURA.png" className="animate-slideInLeft" />
       <div className="lg:flex space-x-10 animate-slideInLeft" id="Paginas">
-        <h5>Home</h5>
-        <h5>Regulación Emocional</h5>
-        <h5>Mindfulness</h5>
-        <h5>Aprender</h5>
+        <h5><a href='#home'>Home</a></h5>
+        <h5><a href='#desc'>Regulación Emocional</a></h5>
+        <h5><a href='#mind'>Mindfulness</a></h5>
+        <h5><a href='#app'>Aprender</a></h5>
       </div>
       <button className="sm:text-lg max-sm:text-xs p-2 pl-5 pr-5 rounded-3xl bg-red-500 text-white">¡Juega Ahora!</button>
       <div className="hidden" id='bars'>
@@ -69,10 +69,10 @@ function Header() {
       {isMenuOpen && (
         <div className="absolute top-16 right-0 bg-white shadow-lg rounded-lg z-50">
           <ul className="space-y-2 sm:text-xs">
-            <li className='hover:bg-gray-200 p-2 rounded-lg'>Home</li>
-            <li className='hover:bg-gray-200 p-2 rounded-lg'>Regulación Emocional</li>
-            <li className='hover:bg-gray-200 p-2 rounded-lg'>Mindfulness</li>
-            <li className='hover:bg-gray-200 p-2 rounded-lg'>Aprender</li>
+            <li className='hover:bg-gray-200 p-2 rounded-lg'><a href='#home'>Home</a></li>
+            <li className='hover:bg-gray-200 p-2 rounded-lg'><a href='#desc'>Regulación Emocional</a></li>
+            <li className='hover:bg-gray-200 p-2 rounded-lg'><a href='#mind'>Mindfulness</a></li>
+            <li className='hover:bg-gray-200 p-2 rounded-lg'><a href='#app'>Aprender</a></li>
           </ul>
         </div>
       )}

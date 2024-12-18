@@ -2,7 +2,7 @@ import JuegaAhora from "./JuegaAhora";
 
 function Celular(){
     return(
-        <div className="font-Nunito xl:flex justify-center align-center mt-4 xl:ml-32 xl:mr-32 sm:m-10 pl-16 pr-16">
+        <div id="mind" className="font-Nunito xl:flex justify-center align-center mt-4 xl:ml-32 xl:mr-32 sm:m-10 pl-16 pr-16">
             <div id="Img" className="mt-0">
                 <img src="https://exploraventura.com.ar/wp-content/uploads/2024/05/08-01-1024x1024.png" alt="" height={600} width={730} />
             </div>

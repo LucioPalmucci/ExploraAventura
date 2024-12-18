@@ -16,7 +16,7 @@ function Introduction(){
 
 
     return(
-        <div className="w-full flex mr-0 bg-cielo" id="contenedor">
+        <div className="w-full flex mr-0 bg-cielo" id="home">
             <div className="m-16 font-Nunito mt-28 text-start animate-slideRT lg:w-1/3"  id="texto">
                 <h4 className="text-xl p-1 text-sky-600 font-semibold">Un viaje de diversión y conexión con los niños</h4><br/>
                 <h2 className="text-5xl font-bold p-1">Un juego para aprender de mindfulness y regulación emocional</h2><br/>

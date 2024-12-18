@@ -22,7 +22,7 @@ function Descripcion(){
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
     return(
-        <div className="font-Nunito xl:flex justify-center align-center mt-40 mb:ml-32 mb:mr-32 sm:ml-16 sm:ml-16 rounded-3xl bg-white p-10 pl-16 pr-16">
+        <div id="desc" className="font-Nunito xl:flex justify-center align-center mt-40 mb:ml-32 mb:mr-32 sm:ml-16 sm:ml-16 rounded-3xl bg-white p-10 pl-16 pr-16">
             <div id="texto" className="lg:w-4/5 md:pl-16 md:pr-16 animate-slideRT">
                 <h4 className="text-xl p-1 text-sky-600 font-semibold">Creado por psicólogos expertos</h4><br/>
                 <h2 className="text-5xl font-bold p-1 text-red-500">Regulación emocional en una app</h2><br/>
