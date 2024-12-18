@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ExploraAventura/static/css/main.9307fe17.css",
-    "main.js": "/ExploraAventura/static/js/main.d4ccce34.js",
+    "main.js": "/ExploraAventura/static/js/main.5d443d63.js",
     "static/js/453.0a36081d.chunk.js": "/ExploraAventura/static/js/453.0a36081d.chunk.js",
     "static/media/slick.svg": "/ExploraAventura/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/ExploraAventura/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/ExploraAventura/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ExploraAventura/index.html",
     "main.9307fe17.css.map": "/ExploraAventura/static/css/main.9307fe17.css.map",
-    "main.d4ccce34.js.map": "/ExploraAventura/static/js/main.d4ccce34.js.map",
+    "main.5d443d63.js.map": "/ExploraAventura/static/js/main.5d443d63.js.map",
     "453.0a36081d.chunk.js.map": "/ExploraAventura/static/js/453.0a36081d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9307fe17.css",
-    "static/js/main.d4ccce34.js"
+    "static/js/main.5d443d63.js"
   ]
 }
